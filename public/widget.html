@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Widget</title>
+    <link rel="stylesheet" href="widget.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="chat-widget">
+        <div class="messages" id="messages"></div>
+        <form id="chat-form">
+          <input
+            type="text"
+            id="msg"
+            placeholder="Type a message..."
+            required
+          />
+          <div class="custom-file-upload">
+            <input type="file" id="fileInput" accept=".pdf,.docx" />
+            <label for="fileInput">
+              <i class="ri-add-line"></i>
+            </label>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </main>
+
+    <script src="widget.js"></script>
+  </body>
+</html>
