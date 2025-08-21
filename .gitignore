@@ -1,0 +1,52 @@
+# Node.js dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# TypeScript cache & output
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs & debug files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# OS / Editor specific files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Coverage reports
+coverage/
+*.lcov
+
+# Public compiled JS (if you compile widget.ts → widget.js directly)
+public/*.js.map
+
+# Optional: Ignore all JS in public if widget.ts compiles there
+# Uncomment if you want widget.js to be generated instead of tracked
+# public/widget.js
+
+# Temporary files
+*.tmp
+*.temp
+
+# OpenAI API keys or any sensitive JSON
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
