@@ -195,19 +195,22 @@ The server extracts `output` content and forwards text back to the widget UI.
 ## Project Structure
 
 ```
-OpenAI-chat-widget/
-├─ public/
-│  ├─ widget.html         # Widget UI
-│  ├─ demo.html           # Demo/test page
-│  └─ embed.js            # Script to inject the widget into other websites
-├─ src/
-│  ├─ server.ts           # Express server + Responses API integration
-│  └─ utils/              # helper functions (file handling, encoding)
-├─ dist/                  # compiled JS (output of tsc)
-├─ .env.example
-├─ package.json
-├─ tsconfig.json
-└─ README.md
+├── dist
+│   ├── public
+│   │   └── widget.js
+│   └── server.js
+├── package.json
+├── package-lock.json
+├── public
+│   ├── demo.css
+│   ├── demo.html
+│   ├── widget.css
+│   └── widget.html
+├── src
+│   ├── public
+│   │   └── widget.ts
+│   └── server.ts
+└── tsconfig.json
 ```
 
 ---
